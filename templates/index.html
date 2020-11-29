@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+
+{% block page_contents %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <a>
+                    <img src="/static/assets/headshot.png" width="75%">
+                </a>
+            </div>
+            <div class="col-sm-5">
+                <h1>Hi there!</h1>
+                <p>My name is Jimmy, welcome to my website!</p>
+                <p>Right now there isn't much to be found here, but it will slowly fill up with functioning versions
+                   of my personal projects.
+                <p>
+                    This website is built from the ground up using Flask and Python on the backend, and good old
+                    HTML, CSS (Bootstrap), and Javascript on the frontend. It is currently hosted on an AWS EC2 instance,
+                    and served using Gunicorn and Nginx.
+                </p>
+                <p>
+                    The code for all the application found on this website,
+                    including the website itself, can be found
+                    <a href="http://www.github.com/uptownfunctor" target="_blank">on my github.</a>
+                </p>
+            </div>
+            <div class="col-sm-3">
+
+            </div>
+        </div>
+
+    </div>
+{% endblock page_contents %}

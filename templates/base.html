@@ -1,0 +1,27 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block navbar %}
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand">Welcome</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/">Home</a></li>
+                <li><a>Page 1</a></li>
+                <li><a href="">Page 2</a></li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://www.github.com/uptownfunctor" target="_blank"><img src="/static/assets/github_light.png" width="75%"></a></li>
+                <li><a href="https://www.linkedin.com/in/jimmy-du-7341179a/" target="_blank"><img src="/static/assets/linkedin.png" width="75%"></a></li>
+
+            </ul>
+        </div>
+    </nav>
+{% endblock navbar %}
+
+{% block content %}
+    {% block page_contents %}{% endblock page_contents %}
+{% endblock content %}
