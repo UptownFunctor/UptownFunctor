@@ -10,8 +10,8 @@
             </div>
             <ul class="nav navbar-nav">
                 <li><a href="/">Home</a></li>
-                <li><a>Page 1</a></li>
-                <li><a href="">Page 2</a></li>
+                <li><a href="/delimiter_remover">Delimiter Remover</a></li>
+                <li><a href="/hotdog">Not Hotdog</a></li>
 
             </ul>
 
@@ -27,3 +27,8 @@
 {% block content %}
     {% block page_contents %}{% endblock page_contents %}
 {% endblock content %}
+
+{% block scripts %}
+    {{ super() }}
+    {% block body_scripts %}{% endblock body_scripts %}
+{% endblock scripts %}
