@@ -4,7 +4,8 @@
     <list default="true" id="74c1634e-fa5c-4b6e-8ef6-55b2bddf91ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scripts/delimiter_remover.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/scripts/delimiter_remover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delimiter_remover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delimiter_remover.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +62,7 @@
       <updated>1606626936924</updated>
       <workItem from="1606626938126" duration="1514000" />
       <workItem from="1606782170507" duration="2577000" />
-      <workItem from="1606791360190" duration="158000" />
+      <workItem from="1606791360190" duration="2087000" />
     </task>
     <servers />
   </component>
