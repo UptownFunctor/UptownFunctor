@@ -28,6 +28,9 @@ def delimiter_remover():
 def hotdog():
     return render_template("hotdog.html")
 
+@app.route('/hidden')
+def hidden():
+    return render_template("hidden.html")
 
 if __name__ == '__main__':
     app.run()
