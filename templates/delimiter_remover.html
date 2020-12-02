@@ -7,29 +7,35 @@
                 <h1>Delimiter Remover</h1>
                 <p>
                     This application allows the user to remove specific delimiters from their text.
-                    Simply paste the text you wish to use into the textbox to the right, and select the
-                    delimiter you wish to remove from the dropdown box.
+                    Simply paste the text you wish to use into the textbox to the right, and enter the delimiter you
+                    wish to remove from the text into the input box on the right.
                 </p>
                 <p>
-                    Pressing the delimit button will bring bring up a hidden div on the bottom of the input
-                    text area containing the result.
+                    The delimiter string can be any valid unicode string, including spaces. Every character in the
+                    delimiter string will be replaced with a space.
                 </p>
             </div>
 
-            <div class = col-sm-7 style="border: 1px coral">
-                <label for="input_form">Input text here</label>
-                <textarea class="form-control" id="input_form" style="height: 250px" placeholder="Enter your Text"></textarea>
+            <form onsubmit="delimit_text(); return false">
+                <div class = col-sm-7 style="border: 1px coral">
+                    {{ form.inputTextArea.label }}
+                    {{ form.inputTextArea(class="form-control", style="height: 250px", placeholder="Enter Your Text") }}
 
-                <br>
-                <div id="output_form_container" style="visibility: hidden">
-                    <label for="output_form">Delimited Text</label>
-                    <textarea class="form-control" id="output_form" style="height:250px"></textarea>
+                    <br>
+                    <div id="output_form_container" style="visibility: hidden">
+                        {{ form.outputTextArea.label }}
+                        {{ form.outputTextArea(class="form-control", style="height:250px") }}
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-sm-2" style="border: 1px navy">
-                <button class="btn btn-primary" id="input_btn">Click Me!</button>
-            </div>
+                <div class="col-sm-2" style="border: 1px navy">
+                    {{ form.delimiterInput.label}}
+                    {{ form.delimiterInput(class="form-control", placeholder="String to remove") }}
+
+                    <br>
+                    {{ form.submit(class="btn btn-primary") }}
+                </div>
+            </form>
 
         </div>
     </div>

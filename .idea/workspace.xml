@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="74c1634e-fa5c-4b6e-8ef6-55b2bddf91ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/scripts/delimiter_remover.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/scripts/delimiter_remover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delimiter_remover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delimiter_remover.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/hidden.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hidden.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +22,7 @@
         <option value="Flask Main" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -61,11 +68,18 @@
       <workItem from="1606626938126" duration="1514000" />
       <workItem from="1606782170507" duration="2577000" />
       <workItem from="1606791360190" duration="2823000" />
-      <workItem from="1606846685164" duration="58000" />
+      <workItem from="1606846685164" duration="109000" />
+      <workItem from="1606877690356" duration="9708000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3157" y="0" width="2051" height="3948" key="search.everywhere.popup" timestamp="1606884352336">
+      <screen x="2266" y="0" width="3840" height="2160" />
+    </state>
+    <state x="3157" y="0" width="2051" height="3948" key="search.everywhere.popup/2266.0.3840.2160/0.24.2160.3816/2160.2160.3840.2160@2266.0.3840.2160" timestamp="1606884352336" />
   </component>
 </project>
