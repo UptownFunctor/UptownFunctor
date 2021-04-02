@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="74c1634e-fa5c-4b6e-8ef6-55b2bddf91ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hidden.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/hidden.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PycharmProjects/git_branch/git_branch_remote" />
   </component>
   <component name="RunManager">
     <configuration name="UptownFunctor" type="Python.FlaskServer">
@@ -73,7 +72,10 @@
       <workItem from="1616892531171" duration="247000" />
       <workItem from="1616893287490" duration="325000" />
       <workItem from="1616893688014" duration="20000" />
-      <workItem from="1617336240774" duration="17000" />
+      <workItem from="1617336240774" duration="564000" />
+      <workItem from="1617389978423" duration="222000" />
+      <workItem from="1617390268310" duration="10000" />
+      <workItem from="1617390292033" duration="11000" />
     </task>
     <servers />
   </component>
