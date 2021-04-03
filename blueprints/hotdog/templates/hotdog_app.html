@@ -1,57 +1,56 @@
 {% extends "base.html" %}
 
+{% block styles %}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('.static', filename='css/preview_image.css')}}">
+{% endblock styles %}
+
 {% block page_contents %}
 
     <div class="container">
         <div class="row">
-
-            <div class="col-sm-4"></div>
             <div class="col-sm-4">
-                <h1>File Upload</h1>
 
+                <h1>Not Hotdog</h1>
+                <p>
+                    Upload an image and have a convolutional (pretrained resnet) neural network guess whether
+                    the image is that of a hot dog, or not hot dog!
+                </p>
+
+                <p>
+                    The application only accepts jpeg that are less than 10mb in size. If your image
+                    exceeds the size limit, the image will still be uploaded to the server, but you will
+                    get in return a warning message instead of a classification. You can use
+                    <a href="https://www.reduceimages.com/" target="_blank">this website</a> to resize your image first.
+                </p>
+
+            </div>
+
+            <div class="col-sm-6" >
+                <br> <br>
                 <form id="uploadForm" onsubmit="get_pred_fn(); return false">
-                    {{ form.file_wtf.label }}
                     {{ form.file_wtf(accept=".jpg, .jpeg") }}
-
-                    {{ form.submit_wtf.label }}
                     {{ form.submit_wtf(class="btn btn-primary")}}
                 </form>
-            </div>
-            <div class="col-sm-4">
+
+                <div class="image_preview" id="image_preview">
+                    <img src="" alt="" class="image_preview_image" id="image_preview_image">
+                    <span class="image_preview_default_text" id="image_preview_default_text">Image Preview</span>
+                </div>
+
                 <div id="prediction_result" style="visibility:hidden">
                     <h2 id="output_header"></h2>
                 </div>
             </div>
 
+            <div class="col-sm-2">
+
+            </div>
         </div>
     </div>
 
 {% endblock page_contents %}
 
 {% block body_scripts %}
-    <script>
-        async function get_pred_fn() {
-
-        console.log("Hotdog!")
-        let uploadForm = document.getElementById('uploadForm')
-        let file = document.getElementById('file_wtf')
-        let formData = new FormData()
-
-        formData.append("file", file.files[0])
-
-        console.log(file.files)
-        let response = await fetch('/hotdog', {
-            method: "POST",
-            body: formData
-            // do not add content-type, form data automatically generaets this
-        })
-
-        let res = await response.json()
-
-        console.log(res['message'])
-
-        document.getElementById('prediction_result').style.visibility="visible"
-        document.getElementById('output_header').innerHTML = res['message']
-    }
-    </script>
+    <script src="{{url_for('.static', filename='scripts/get_pred.js')}}"></script>
 {% endblock body_scripts %}

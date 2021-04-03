@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74c1634e-fa5c-4b6e-8ef6-55b2bddf91ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/blueprints/hotdog/model/imagenet_classes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprints/hotdog/model/pretrained_resnet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprints/hotdog/static_d/forms/hotdog_form.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprints/hotdog/static_d/scripts/get_pred.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blueprints/hotdog/templates/hotdog_app.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blueprints/hotdog/static/css/preview_image.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blueprints/hotdog/hotdog_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/hotdog/hotdog_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/hotdog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprints/hotdog/static_d/forms/hotdog_form.py" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/hotdog/static/forms/hotdog_form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprints/hotdog/static_d/scripts/get_pred.js" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/hotdog/static/scripts/get_pred.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blueprints/hotdog/templates/hotdog_app.html" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/hotdog/templates/hotdog_app.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +24,19 @@
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Python Script" />
+        <option value="CSS File" />
       </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
     </option>
   </component>
   <component name="Git.Settings">
@@ -44,6 +53,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/blueprints/hotdog/model" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -116,6 +126,7 @@
       <workItem from="1617389978423" duration="222000" />
       <workItem from="1617390268310" duration="10000" />
       <workItem from="1617390292033" duration="11000" />
+      <workItem from="1617409348139" duration="7667000" />
     </task>
     <servers />
   </component>

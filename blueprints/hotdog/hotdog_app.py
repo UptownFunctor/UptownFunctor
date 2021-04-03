@@ -1,5 +1,5 @@
 from flask import render_template, request, jsonify, make_response, url_for, redirect, Blueprint
-from blueprints.hotdog.static_d.forms.hotdog_form import FileUploadForm
+from blueprints.hotdog.static.forms.hotdog_form import FileUploadForm
 from blueprints.hotdog.model.pretrained_resnet import Hotdog_Model_Resnet
 from PIL import Image
 from torch.nn.functional import softmax
@@ -7,8 +7,8 @@ from torch import topk
 
 hotdog_app = Blueprint("hotdog_app", __name__,
                        template_folder="templates",
-                       static_folder='static_d',
-                       static_url_path='/static_d')
+                       static_folder="static",
+                       static_url_path='/blueprints/hotdog/static')
 
 # Model created as a global variable to cache it
 model = Hotdog_Model_Resnet()
