@@ -1,9 +1,13 @@
 from flask import Flask, render_template, request, make_response, jsonify, session, redirect
 from flask_bootstrap import Bootstrap
 from static.forms.delimiter_remover.delimiter_remover_forms import TextAreaForm
+from blueprints.hotdog.hotdog_app import hotdog_app
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '~3A;h@&a\d7'
+app.config['MAX_CONTENT_LENGTH'] = 10 * 1024 * 1024 # Limit request object size to 10mb
+
+app.register_blueprint(hotdog_app)
 
 bootstrap = Bootstrap(app)
 
@@ -27,10 +31,6 @@ def delimiter_remover():
         return make_response(jsonify({'message': res}), 200)
     else:
         return render_template("delimiter_remover.html", form=form)
-
-@app.route('/hotdog')
-def hotdog():
-    return render_template("hotdog.html")
 
 @app.route('/hidden')
 def hidden():

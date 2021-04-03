@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block page_contents %}
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h1>File Upload</h1>
+
+                <form id="uploadForm" onsubmit="get_pred_fn(); return false">
+                    {{ form.file_wtf.label }}
+                    {{ form.file_wtf(accept=".jpg, .jpeg") }}
+
+                    {{ form.submit_wtf.label }}
+                    {{ form.submit_wtf(class="btn btn-primary")}}
+                </form>
+            </div>
+            <div class="col-sm-4">
+                <div id="prediction_result" style="visibility:hidden">
+                    <h2 id="output_header"></h2>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+{% endblock page_contents %}
+
+{% block body_scripts %}
+    <script>
+        async function get_pred_fn() {
+
+        console.log("Hotdog!")
+        let uploadForm = document.getElementById('uploadForm')
+        let file = document.getElementById('file_wtf')
+        let formData = new FormData()
+
+        formData.append("file", file.files[0])
+
+        console.log(file.files)
+        let response = await fetch('/hotdog', {
+            method: "POST",
+            body: formData
+            // do not add content-type, form data automatically generaets this
+        })
+
+        let res = await response.json()
+
+        console.log(res['message'])
+
+        document.getElementById('prediction_result').style.visibility="visible"
+        document.getElementById('output_header').innerHTML = res['message']
+    }
+    </script>
+{% endblock body_scripts %}
