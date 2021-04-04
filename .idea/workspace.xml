@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="74c1634e-fa5c-4b6e-8ef6-55b2bddf91ea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blueprints/hotdog/templates/hotdog_app.html" beforeDir="false" afterPath="$PROJECT_DIR$/blueprints/hotdog/templates/hotdog_app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/delimiter_remover.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/delimiter_remover.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +126,7 @@
       <workItem from="1617409348139" duration="7667000" />
       <workItem from="1617487564893" duration="66000" />
       <workItem from="1617493682611" duration="646000" />
-      <workItem from="1617494931713" duration="271000" />
+      <workItem from="1617494931713" duration="1028000" />
     </task>
     <servers />
   </component>

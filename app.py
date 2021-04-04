@@ -26,7 +26,7 @@ def delimiter_remover():
         delimiter = request.get_json()['delimiter']
 
         d_len = len(delimiter)
-        res = (' '*d_len).join(text.split(delimiter)).strip()
+        res = (''*d_len).join(text.split(delimiter)).strip()
 
         return make_response(jsonify({'message': res}), 200)
     else:
